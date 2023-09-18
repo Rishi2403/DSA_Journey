@@ -39,7 +39,7 @@ vector<int> topviewbinarytree(Node* root){
             int currColumn=p.second;
             q.pop();
 
-            if(m.find(currColumn)==m.end()){
+            if(m.find(currColumn)==m.end() or m.find(currColumn)!=m.end()){
                 m[currColumn]=currNode->value;
             }
 
