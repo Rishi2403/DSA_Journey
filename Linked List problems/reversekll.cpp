@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 using namespace std;
 
 class Node {
@@ -69,6 +69,7 @@ Node* reversekll(Node* &head , int k){
     while(currptr!=NULL && counter<k){ //reversing k nodes
         Node* nextptr=currptr->next;
         currptr->next=prevptr;
+        prevptr=currptr;
         currptr=nextptr;
         counter++;
     }
